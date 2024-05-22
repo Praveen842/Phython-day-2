@@ -1,0 +1,18 @@
+def can_form_rectangle(sides):
+   
+    sides.sort()
+    
+    
+    if sides[0] == sides[1] and sides[2] == sides[3]:
+        return True
+    else:
+        return False
+
+
+sides = list(map(int, input("Enter rectangle four sides of length: ").split()))
+
+
+if can_form_rectangle(sides):
+    print("Yes")
+else:
+    print("No")
