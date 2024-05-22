@@ -1,0 +1,16 @@
+
+n = int(input("Enter how many values do you want to read: "))
+print(f"Enter {n} values:", end=" ")
+values = list(map(int, input().split()))
+
+
+total_sum = 0
+index = 0
+
+
+while index < n:
+    total_sum += values[index]
+    index += 1
+
+
+print("Sum of given values:", total_sum)
