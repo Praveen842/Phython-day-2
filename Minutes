@@ -1,0 +1,13 @@
+def find_coinciding_minutes(hour):
+    if hour < 1 or hour > 12:
+        return "Invalid input"
+    
+    
+    minutes = (60 * hour) / 11
+    return f"({int(minutes * 10)} / 11)"
+
+
+hour = int(input("Enter time in hours: "))
+
+result = find_coinciding_minutes(hour)
+print(result)
