@@ -1,0 +1,13 @@
+
+def extract_last_two_digits(n):
+    if abs(n) < 100:
+        return "Number should have more than two digits."
+    else:
+        last_two_digits = abs(n) % 100
+        return last_two_digits
+
+n = int(input("Enter an integer (with more than two digits): "))
+
+
+result = extract_last_two_digits(n)
+print("The last two digits are:", result)
