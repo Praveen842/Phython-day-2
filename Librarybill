@@ -1,0 +1,18 @@
+def calculate_fine(days_late):
+    if days_late <= 0:
+        return "No fine"
+    elif 1 <= days_late <= 5:
+        return "Rs. 0.50"
+    elif 6 <= days_late <= 10:
+        return "Rs. 1.00"
+    elif 11 <= days_late <= 30:
+        return "Rs. 5.00"
+    else:
+        return "Your membership has been cancelled"
+
+
+days_late = int(input("Enter how many days late you are: "))
+
+
+result = calculate_fine(days_late)
+print("Your fine:", result)
